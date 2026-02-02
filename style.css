@@ -74,13 +74,6 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* .hero-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .hero-image img {
   max-width: 500px;
   width: 100%;
