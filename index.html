@@ -93,42 +93,45 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="projects-slider">
-      <article class="project-card">
-        <img src="assests/project-img/susfox3.png" alt="Project">
-        <h4>The Read Cave</h4>
-        <p>CMS Site for a Book Recommendation Site</p>
-        <p>Using PHP, JavaScript, React and Tailwind</p>
-      </article>
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+  <div class="projects-slider">
+    <article class="project-card">
+      <img src="assests/project-img/thereadcave1.jpg" alt="Project" class="lightbox-item">
+      <img src="assests/project-img/thereadcave2.jpg" alt="Project" class="lightbox-item">
+      <h4>The Read Cave</h4>
+      <p>CMS Site for a Book Recommendation Site</p>
+      <p>Using PHP, JavaScript, React and Tailwind</p>
+    </article>
 
-      <article class="project-card">
-        <img src="assests/project-img/susfox2.png" alt="Project">
-        <h4>Chuches Store</h4>
-        <p>Ecommerce Site</p>
-        <p>HTML, Ruby on Rails, CSS, JavaScript, Dockerfile</p>
-      </article>
+    <!-- <article class="project-card">
+      <img src="assests/image1.png" alt="Project" class="lightbox-item">
+      <h4>Chuches Store</h4>
+      <p>Ecommerce Site</p>
+      <p>HTML, Ruby on Rails, CSS, JavaScript, Dockerfile</p>
+    </article> -->
 
-      <article class="project-card">
-        <img src="assests/project-img/susfox1.png" alt="Project">
-        <h4>SusFox</h4>
-        <p>Electron Application</p>
-        <p>HTML, CSS, JavaScript, Electron</p>
-      </article>
-    </div>
-    </section>
+    <article class="project-card">
+      <img src="assests/project-img/susfox1.png" alt="Project" class="lightbox-item">
+      <img src="assests/project-img/susfox2.png" alt="Project" class="lightbox-item">
+      <img src="assests/project-img/susfox3.png" alt="Project" class="lightbox-item">
+      <h4>SusFox</h4>
+      <p>Electron Application</p>
+      <p>HTML, CSS, JavaScript, Electron</p>
+    </article>
+  </div>
+</section>
 
-    <!--<section id="contact" class="contact">
-    <h2>Contact me</h2>
-    <p>GitHub:
-        <a href="#" target="_blank">GitHub Profile</a>
-    </p>
-    <p>LinkedIn:
-        <a href="#" target="_blank">LinkedIn Profile</a>
-    </p>
-    </section>
-    -->
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-btn prev" aria-label="Anterior">&#10094;</button>
+  <img id="lightbox-img" alt="Imagen ampliada">
+  <button class="lightbox-btn next" aria-label="Siguiente">&#10095;</button>
+  <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+</div>
+
+<script src="script.js"></script>
+
     <footer>
         <p>&copy; 2024 Laura Lopez. All rights reserved.</p>
     </footer>

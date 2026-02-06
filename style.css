@@ -384,6 +384,57 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
+/* LIGHTBOX */
+.lightbox-item {
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 9999;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+#lightbox-img {
+  max-width: 85vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-btn,
+.lightbox-close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+}
+.project-card .lightbox-item {
+  display: none;
+}
+
+.project-card .lightbox-item:first-of-type {
+  display: block;
+}
+
 /* FOOTER */
 footer {
   background: #0a1128;
