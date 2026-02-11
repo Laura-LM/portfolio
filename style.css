@@ -40,6 +40,11 @@ body {
   color: #00d9ff;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* HERO */
 .hero {
   background: linear-gradient(135deg, #0a1128 0%, #1a2744 100%);
@@ -346,11 +351,14 @@ body {
 }
 
 .projects-slider {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  justify-content: center;
+  justify-items: center;
   margin-top: 3rem;
-  flex-wrap: wrap;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-card {
@@ -358,7 +366,7 @@ body {
   border: 1px solid rgba(0, 217, 255, 0.3);
   color: #fff;
   border-radius: 16px;
-  width: 280px;
+  width: 380px;
   overflow: hidden;
   transition: all 0.3s;
 }
@@ -369,19 +377,32 @@ body {
 }
 
 .project-card img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
   display: block;
 }
 
 .project-card h4 {
   margin: 1rem 0 0.3rem;
+  padding: 0 1rem;
   color: #00d9ff;
+}
+
+.project-card h4 a {
+  color: #00d9ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-card h4 a:hover {
+  color: #00eeff;
+  text-decoration: underline;
 }
 
 .project-card p {
   font-size: 0.9rem;
-  padding-bottom: 1rem;
+  padding: 0 1rem 1rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -445,6 +466,12 @@ button.button-card {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
+  margin-bottom: 1rem;
+}
+
+button.button-card:hover {
+  background: #00b8d4;
+  transform: scale(1.05);
 }
 
 /* FOOTER */
