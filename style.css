@@ -60,6 +60,7 @@ a {
   max-width: 480px;
   flex: 1;
   text-align: center;
+  margin: 0 auto; 
 }
 
 .hero h1 {
