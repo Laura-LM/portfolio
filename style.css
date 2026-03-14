@@ -52,12 +52,12 @@ a {
   align-items: center;
   justify-content: center;
   padding: 4rem 8%;
-  gap: 3rem;
+  /* gap: 3rem; */
   min-height: 50vh;
 }
 
 .hero-text {
-  max-width: 480px;
+  max-width: 680px;
   flex: 1;
   text-align: center;
   margin: 0 auto; 
@@ -90,7 +90,7 @@ a {
 /* ABOUT ME */
 .about-me {
   background: linear-gradient(180deg, #1a2744, #0a1128);
-  padding: 3rem 8%;
+  padding: 8rem 8%;
   color: #fff;
 }
 
