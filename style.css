@@ -64,13 +64,18 @@ a {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 7rem;
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: #fff;
 }
 
 .hero h2 {
-  font-size: 1.8rem;
-  margin-top: 0.5rem;
+  font-size: 1.15rem;
+  margin-top: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   color: #00d9ff;
 }
 
@@ -331,7 +336,7 @@ a {
 .experience {
   background: linear-gradient(180deg, #0a1128, #1a2744);
   color: #fff;
-  padding: 3rem 8%;
+  /* padding: 3rem 8%; */
   text-align: center;
 }
 
@@ -422,11 +427,11 @@ a {
   }
 
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 4.2rem;
   }
 
   .hero h2 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .about-container {
