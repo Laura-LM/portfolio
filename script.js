@@ -55,3 +55,23 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') showNext();
   if (e.key === 'ArrowLeft') showPrev();
 });
+
+const backTopBtn = document.getElementById('back-top-btn');
+
+function updateBackTopVisibility() {
+  if (!backTopBtn) return;
+  if (window.scrollY > 240) {
+    backTopBtn.classList.add('show');
+  } else {
+    backTopBtn.classList.remove('show');
+  }
+}
+
+if (backTopBtn) {
+  window.addEventListener('scroll', updateBackTopVisibility);
+  updateBackTopVisibility();
+
+  backTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}

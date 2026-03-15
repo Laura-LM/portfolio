@@ -927,6 +927,88 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Back To Top */
+.back-top-btn {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #00d9ff, #00b8d4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  z-index: 1200;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+}
+
+.back-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-top-arrow path {
+  fill: #0a1128;
+}
+
+.back-top-text {
+  font-size: 0.72rem;
+  width: 110px;
+  position: absolute;
+  color: #00d9ff;
+  background: rgba(10, 17, 40, 0.9);
+  border: 1px solid rgba(0, 217, 255, 0.35);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -34px;
+  padding: 0.2rem 0.5rem;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.back-top-btn:hover .back-top-text {
+  opacity: 1;
+}
+
+.back-top-btn:hover .back-top-arrow {
+  animation: back-top-slide 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes back-top-slide {
+  0% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-top-btn {
+    right: 0.85rem;
+    bottom: 0.85rem;
+    width: 44px;
+    height: 44px;
+  }
+
+  .back-top-text {
+    display: none;
+  }
+}
+
 /* Final responsive overrides for project cards (kept at end so they are not overridden) */
 @media (max-width: 1024px) {
   .projects {
